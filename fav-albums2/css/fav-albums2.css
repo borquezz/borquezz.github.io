@@ -1,0 +1,61 @@
+body{
+  background: #e1e1e1
+}
+header{
+  color:#ffffff;
+  font-family:sans-serif,serif;
+  text-align: center;
+  background:#309383;
+  display: block;
+  font-variant: small-caps;
+}
+.album .coverimg{
+  width: 20%;
+  float: left;
+  margin-left: 5%;
+  margin-top: 1.5%;
+  clear: both;
+  border: 5px outset #a1a0a0;
+}
+.album{;
+  color: #101010;
+  font-family:sans-serif,serif;
+  text-align: center;
+  display:block;
+  background-color: rgba(61,201,179,0.4);
+  border-radius: 20px;
+  width:70%;
+  padding: 10px 0px;
+  margin: 1% 15%;
+  clear: both;
+  overflow: hidden;
+}
+.albumtrack .albumaudio{
+  height: 20px;
+  width: 20px;
+}
+.album .albumtrack{
+  text-align: center;
+}
+/* The Hover Elements */
+.album:hover .albumaudio, .album:focus .albumaudio{
+  display: inline;
+  visibility: visible;
+  transform: scale(1,1);
+  height: 20px;
+  width: 300px;
+  transition-duration: 1s;
+}
+.album:hover,.album:focus{
+  border: 2.5px solid;
+}
+footer{
+  color:#ffffff;
+  font-family:sans-serif,serif;
+  text-align: center;
+  background:#309383;
+  display: block;
+}
+a{
+  color:white;
+}
