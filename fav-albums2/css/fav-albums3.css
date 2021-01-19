@@ -1,0 +1,64 @@
+*{
+  /* Removing browser defaults */
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body{
+  background: #fdf498;
+}
+html{
+  font-size: 16px;
+}
+header{
+  color:#ffffff;
+  font-family:sans-serif,serif;
+  text-align: center;
+  background:		#ee4035;
+  display: block;
+  font-variant: small-caps;
+  width: 100%;
+  font-size: 1rem;
+  clear: both;
+}
+.album{
+  display: block;
+  width: 70%;
+  margin: 1% 15%;
+  font-size: 1rem;
+  font-family: sans-serif;
+  clear: both;
+  background-color: white;
+}
+.album .text{
+  display: inline-block;
+  width: 50%;
+  margin: 2% 20%;
+  padding: 5%;
+  background: gray;
+}
+@media screen and (min-width:1200px) {
+  .album{
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    font-size: 1rem;
+    font-family: sans-serif;
+    background-color: white;
+  }
+}
+
+footer{
+  color:#ffffff;
+  font-family:sans-serif,serif;
+  text-align: center;
+  background:#ee4035;
+  display: block;
+  padding: 1% 0;
+  clear: both;
+}
+footer a{
+  color:white;
+  margin: 0 2%;
+}

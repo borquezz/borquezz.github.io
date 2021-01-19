@@ -1,0 +1,70 @@
+@font-face {
+  font-family: montserrat;
+  src: url("fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: glacial-indifference;
+  src: url("fonts/GlacialIndifference-Regular.otf");
+}
+@font-face {
+  font-family: bebasneue;
+  src: url("fonts/BebasNeue-Regular.ttf");
+}
+body{
+  background-color: #020202;
+  color: #ececec;
+  font-family: bebasneue;
+}
+header{
+  background-color: 	#313131;
+  border-bottom: 1px solid rgba(238, 238, 238, 0.5);
+  text-align: center;
+  clear: both;
+  padding-bottom: 2%;
+}
+header span{
+  font-size: 2rem;
+  text-align: center;
+  padding: 3%;
+}
+header .borquezmusicbig{
+  width:25%;
+  transition: 0.5s;
+  padding: 2% 0;
+}
+@media screen and (max-width:760px) {
+  header .borquezmusicbig{
+    width:50%;
+  }
+}
+header .borquezmusicsmall{
+  width:5%;
+  padding-top: 2%;
+  transition: 0.5s;
+}
+.bigmargin{
+  margin-top: 110%;
+  transition: 0.5s;
+}
+.smallmargin{
+  margin-top: 35%;
+  transition: 0.5s;
+}
+@media screen and (min-width:992px) {
+  .bigmargin{
+    margin-top: 40%;
+    transition: 0.5s;
+  }
+  .smallmargin{
+    margin-top: 35%;
+    transition: 0.5s;
+  }
+}
+
+/* div h1{
+  font-family: glacial-indifference;
+  text-transform: uppercase;
+}
+div p{
+  font-family: bebasneue;
+} */
