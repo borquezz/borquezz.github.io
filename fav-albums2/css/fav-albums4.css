@@ -14,6 +14,7 @@ body{
   background-color: #020202;
   color: #ececec;
   font-family: bebasneue;
+  text-align: center;
 }
 header{
   background-color: 	#313131;
@@ -50,6 +51,25 @@ header .borquezmusicsmall{
   margin-top: 35%;
   transition: 0.5s;
 }
+.d-flex {
+  border:2px solid #000;
+}
+.d-flex img {
+  width:70%;
+  margin: 5% 10%;
+  flex: auto;
+  cursor:pointer;
+  border:2px solid #000;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  opacity: 70%;
+}
+.d-flex img:hover,.d-flex img:focus{
+  transform: scale(1.05);
+  filter: grayscale(0%);
+  transition: 0.5s;
+  opacity: 95%;
+}
 @media screen and (min-width:992px) {
   .bigmargin{
     margin-top: 40%;
@@ -59,8 +79,11 @@ header .borquezmusicsmall{
     margin-top: 35%;
     transition: 0.5s;
   }
+  .d-flex img{
+    width: 30%;
+    margin: 1%;
+  }
 }
-
 /* div h1{
   font-family: glacial-indifference;
   text-transform: uppercase;
