@@ -27,52 +27,81 @@
     <div class="container bigmargin" id="firstcontainer">
       <h1>Click on images to display more info.</h1>
       <div class="d-flex flex-row flex-wrap">
-        <img src="imgs/roisin-machine.png" alt="">
-        <img src="imgs/el-ultimo-tour-del-mundo.png" alt="">
-        <img src="imgs/man-on-the-moon.png" alt="">
+        <img src="imgs/roisin-machine.png" alt="roisin machine cover" data-bs-toggle="modal" data-bs-target="#myModal" onclick="changeModal(this)">
+        <img src="imgs/el-ultimo-tour-del-mundo.png" alt="" data-bs-toggle="modal" data-bs-target="#myModal" onclick="changeModal(this)">
+        <img src="imgs/man-on-the-moon.png" alt="" data-bs-toggle="modal" data-bs-target="#myModal" onclick="changeModal(this)">
       </div>
       <div class="d-flex flex-row flex-wrap">
-        <img src="imgs/limbo.png" alt="">
-        <img src="imgs/sawayama.png" alt="">
-        <img src="imgs/tengo-que-calmarme.jpg" alt="">
+        <img src="imgs/limbo.png" alt="" data-bs-toggle="modal" data-bs-target="#myModal" onclick="changeModal(this)">
+        <img src="imgs/sawayama.png" alt="" data-bs-toggle="modal" data-bs-target="#myModal" onclick="changeModal(this)">
+        <img src="imgs/tengo-que-calmarme.jpg" alt="" data-bs-toggle="modal" data-bs-target="#myModal" onclick="changeModal(this)">
       </div>
       <div class="d-flex flex-row flex-wrap">
-        <img src="imgs/orca.jpg" alt="">
-        <img src="imgs/song-machine.png" alt="">
-        <img src="imgs/childish-gambino.jpg" alt="">
+        <img src="imgs/orca.jpg" alt="" data-bs-toggle="modal" data-bs-target="#myModal" onclick="changeModal(this)">
+        <img src="imgs/song-machine.png" alt="" data-bs-toggle="modal" data-bs-target="#myModal" onclick="changeModal(this)">
+        <img src="imgs/childish-gambino.jpg" alt="" data-bs-toggle="modal" data-bs-target="#myModal" onclick="changeModal(this)">
       </div>
       <div class="d-flex flex-row flex-wrap">
-        <img src="imgs/folklore.png" alt="">
-        <img src="imgs/circles.png" alt="">
-        <img src="imgs/after-hours.jpg" alt="">
+        <img src="imgs/folklore.png" alt="" data-bs-toggle="modal" data-bs-target="#myModal" onclick="changeModal(this)">
+        <img src="imgs/circles.png" alt="" data-bs-toggle="modal" data-bs-target="#myModal" onclick="changeModal(this)">
+        <img src="imgs/after-hours.jpg" alt="" data-bs-toggle="modal" data-bs-target="#myModal" onclick="changeModal(this)">
       </div>
       <div class="d-flex flex-row flex-wrap">
-        <img src="imgs/nectar.png" alt="">
-        <img src="imgs/djesse.jpg" alt="">
-        <img src="imgs/ungodly-hour.png" alt="">
+        <img src="imgs/nectar.png" alt="" data-bs-toggle="modal" data-bs-target="#myModal" onclick="changeModal(this)">
+        <img src="imgs/djesse.jpg" alt="" data-bs-toggle="modal" data-bs-target="#myModal" onclick="changeModal(this)">
+        <img src="imgs/ungodly-hour.png" alt="" data-bs-toggle="modal" data-bs-target="#myModal" onclick="changeModal(this)">
       </div>
       <div class="d-flex flex-row flex-wrap">
-        <img src="imgs/yhlqmdlg.png" alt="">
-        <img src="imgs/future-nostalgia.jpg" alt="">
-        <img src="imgs/the-new-abnormal.jpg" alt="">
+        <img src="imgs/yhlqmdlg.png" alt="" data-bs-toggle="modal" data-bs-target="#myModal" onclick="changeModal(this)">
+        <img src="imgs/future-nostalgia.jpg" alt="" data-bs-toggle="modal" data-bs-target="#myModal" onclick="changeModal(this)">
+        <img src="imgs/the-new-abnormal.jpg" alt="" data-bs-toggle="modal" data-bs-target="#myModal" onclick="changeModal(this)">
       </div>
       <div class="d-flex flex-row flex-wrap">
-        <img src="" alt="">
-        <img src="imgs/zeros.png" alt="">
-        <img src="" alt="">
+        <img src="imgs/the-slow-rush.jpg" alt="" data-bs-toggle="modal" data-bs-target="#myModal" onclick="changeModal(this)">
+        <img src="imgs/zeros.png" alt="" data-bs-toggle="modal" data-bs-target="#myModal" onclick="changeModal(this)">
+      </div>
+    </div>
+    <div class="modal fade" tabindex="-1" id="myModal">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 id="modal-title">20. Róisín Machine - Róisín Murphy</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6">
+                  <img src="imgs/roisin-machine.png" alt="" id="modal-cover">
+                </div>
+                <div class="col-lg-6">
+                  <h3>top tracks</h3>
+                  <p id="song1">Murphy's Law</p>
+                  <audio src="audio/roisin-machine/murphys-law.mp3" controls id="audio1"></audio><br>
+                  <p id="song2">Something More</p>
+                  <audio src="audio/roisin-machine/something-more.mp3" controls id="audio2"></audio><br>
+                  <p id="song3">Simulation</p>
+                  <audio src="audio/roisin-machine/simulation.mp3" controls id="audio3"></audio><br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- <footer>
+    <footer>
       <p>This page was made by Jesus Fernando Borquez</p>
       <h4>Link to my social media</h4>
       <a href="https://twitter.com/borqzz?s=08" aria-label="Twitter" target="_blank">
         <i class="fab fa-twitter fa-3x"></i></a>
       <a href="https://instagram.com/borquezmusic?igshid=17ajyptxb5opo" aria-label="Instagram" target="_blank">
         <i class="fab fa-instagram fa-3x"></i></a>
-    </footer> -->
+    </footer>
 
     <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   </body>
 </html>
