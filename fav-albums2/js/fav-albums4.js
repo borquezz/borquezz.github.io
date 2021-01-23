@@ -1,19 +1,24 @@
 function scrollFunction() {
+  var imgs = document.getElementsByTagName('img');
   if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-    document.getElementById("borquezmusic").src = "imgs/borquezmusic.png"
-    document.getElementById("borquezmusic").className = "borquezmusicsmall"
-    document.getElementById("intro").style.display = "none"
+    document.getElementById("borquezmusic").src = "imgs/borquezmusic.png";
+    document.getElementById("borquezmusic").className = "borquezmusicsmall";
+    document.getElementById("intro").style.display = "none";
+    // img = document.getElementsByTagName('img');
+    // img[1].className = "focused";
   } else {
-    document.getElementById("borquezmusic").src = "imgs/me.png"
-    document.getElementById("borquezmusic").className = "borquezmusicbig rounded-circle"
-    document.getElementById("intro").style.display = "inline"
+    document.getElementById("borquezmusic").src = "imgs/me.png";
+    document.getElementById("borquezmusic").className = "borquezmusicbig rounded-circle";
+    document.getElementById("intro").style.display = "inline";
+    // img = document.getElementsByTagName('img');
+    // img[1].className = "unfocused";
   }
 }
 function heightFunction(){
   if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-    document.getElementById('firstcontainer').className = "container smallmargin"
+    document.getElementById('firstcontainer').className = "container smallmargin";
   } else {
-    document.getElementById('firstcontainer').className = "container bigmargin"
+    document.getElementById('firstcontainer').className = "container bigmargin";
   }
 }
 function capitalizeWords(string){
@@ -93,15 +98,15 @@ function changeModal(element){
           switch (k) {
             case 1:
             audio1.src = "audio/"+albumname[0]+"/"+audio+".mp3";
-            song1.innerHTML = song;
+            song1.innerHTML = capitalizeWords(song);
             break;
             case 2:
             audio2.src = "audio/"+albumname[0]+"/"+audio+".mp3";
-            song2.innerHTML = song;
+            song2.innerHTML = capitalizeWords(song);
             break;
             case 3:
             audio3.src = "audio/"+albumname[0]+"/"+audio+".mp3";
-            song3.innerHTML = song;
+            song3.innerHTML = capitalizeWords(song);
             break;
             default: k=1;
           } k++;
@@ -111,15 +116,15 @@ function changeModal(element){
           switch (k) {
             case 1:
             audio1.src = "audio/"+albumname[0]+"/"+audio+".mp3";
-            song1.innerHTML = song;
+            song1.innerHTML = capitalizeWords(song);
             break;
             case 2:
             audio2.src = "audio/"+albumname[0]+"/"+audio+".mp3";
-            song2.innerHTML = song;
+            song2.innerHTML = capitalizeWords(song);
             break;
             case 3:
             audio3.src = "audio/"+albumname[0]+"/"+audio+".mp3";
-            song3.innerHTML = song;
+            song3.innerHTML = capitalizeWords(song);
             break;
             default: k=1;
           } k++;

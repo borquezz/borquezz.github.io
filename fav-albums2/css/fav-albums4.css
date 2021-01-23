@@ -7,6 +7,10 @@
   src: url("fonts/GlacialIndifference-Regular.otf");
 }
 @font-face {
+  font-family: glacial-indifference-bold;
+  src: url("fonts/GlacialIndifference-Bold.otf");
+}
+@font-face {
   font-family: bebasneue;
   src: url("fonts/BebasNeue-Regular.ttf");
 }
@@ -44,11 +48,11 @@ header .borquezmusicsmall{
   transition: 0.5s;
 }
 .bigmargin{
-  margin-top: 110%;
+  margin-top: 130%;
   transition: 0.5s;
 }
 .smallmargin{
-  margin-top: 35%;
+  margin-top: 55%;
   transition: 0.5s;
 }
 .d-flex {
@@ -70,20 +74,71 @@ header .borquezmusicsmall{
   transition: 0.5s;
   opacity: 95%;
 }
+@media screen and (max-width:992px) {
+  .unfocused{
+    width:70%;
+    margin: 5% 10%;
+    flex: auto;
+    cursor:pointer;
+    border:2px solid #000;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    opacity: 70%;
+  }
+  .focused{
+    transform: scale(1.05);
+    filter: grayscale(0%);
+    transition: 0.5s;
+    opacity: 95%;
+  }
+}
 .modal{
   color: #020202;
+}
+.modal-body{
+  background: #eeeeee;
+}
+.modal-header{
+  background: #dddddd;
 }
 .modal-body img{
   width: 100%;
   border-radius: 5%;
 }
+#modaltitle{
+  font-size: 150%;
+}
+h3{
+  margin-top: 5%;
+}
+#song1,#song2,#song3{
+  font-family: glacial-indifference;
+  font-size: 110%;
+}
+#audio1,#audio2,#audio3{
+  width: 100%;
+}
+footer{
+  font-family: glacial-indifference;
+  background: #313131;
+  padding: 2% 0;
+  margin-top: 1%;
+}
+footer a{
+  color: #eeeeee;
+  margin: 0 2%;
+  text-decoration: none;
+}
+footer a:hover{
+  color: #dddddd;
+}
 @media screen and (min-width:992px) {
   .bigmargin{
-    margin-top: 40%;
+    margin-top: 60%;
     transition: 0.5s;
   }
   .smallmargin{
-    margin-top: 35%;
+    margin-top: 55%;
     transition: 0.5s;
   }
   .d-flex img{

@@ -17,6 +17,7 @@
       window.onscroll = function() {
         scrollFunction();
         heightFunction();
+        console.log(window.scrollY);
       }
     </script>
     <header class="fixed-top" id="header">
@@ -27,9 +28,9 @@
     <div class="container bigmargin" id="firstcontainer">
       <h1>Click on images to display more info.</h1>
       <div class="d-flex flex-row flex-wrap">
-        <img src="imgs/roisin-machine.png" alt="roisin machine cover" data-bs-toggle="modal" data-bs-target="#myModal" onclick="changeModal(this)">
-        <img src="imgs/el-ultimo-tour-del-mundo.png" alt="" data-bs-toggle="modal" data-bs-target="#myModal" onclick="changeModal(this)">
-        <img src="imgs/man-on-the-moon.png" alt="" data-bs-toggle="modal" data-bs-target="#myModal" onclick="changeModal(this)">
+        <img src="imgs/roisin-machine.png" alt="roisin machine cover" class="unfocused" data-bs-toggle="modal" data-bs-target="#myModal" onclick="changeModal(this)">
+        <img src="imgs/el-ultimo-tour-del-mundo.png" alt="" class="unfocused" data-bs-toggle="modal" data-bs-target="#myModal" onclick="changeModal(this)">
+        <img src="imgs/man-on-the-moon.png" alt="" class="unfocused" data-bs-toggle="modal" data-bs-target="#myModal" onclick="changeModal(this)">
       </div>
       <div class="d-flex flex-row flex-wrap">
         <img src="imgs/limbo.png" alt="" data-bs-toggle="modal" data-bs-target="#myModal" onclick="changeModal(this)">
@@ -61,6 +62,7 @@
         <img src="imgs/zeros.png" alt="" data-bs-toggle="modal" data-bs-target="#myModal" onclick="changeModal(this)">
       </div>
     </div>
+
     <div class="modal fade" tabindex="-1" id="myModal">
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
@@ -91,12 +93,14 @@
     </div>
 
     <footer>
-      <p>This page was made by Jesus Fernando Borquez</p>
-      <h4>Link to my social media</h4>
+      <h4>This page was made by Jesus Fernando Borquez</h4>
+      <p>Link to my social media</p>
       <a href="https://twitter.com/borqzz?s=08" aria-label="Twitter" target="_blank">
         <i class="fab fa-twitter fa-3x"></i></a>
       <a href="https://instagram.com/borquezmusic?igshid=17ajyptxb5opo" aria-label="Instagram" target="_blank">
         <i class="fab fa-instagram fa-3x"></i></a>
+      <a href="https://www.linkedin.com/in/jes%C3%BAs-fernando-borquez-talamante-88506516a/" aria-label="LinkedIn" target="_blank">
+        <i class="fab fa-linkedin-in fa-3x"></i></a>
     </footer>
 
     <!-- Bootstrap Bundle with Popper -->
