@@ -60,6 +60,7 @@ header .borquezmusicsmall{
 }
 .d-flex img {
   width:70%;
+  height: auto;
   margin: 5% 10%;
   flex: auto;
   cursor:pointer;
@@ -91,6 +92,9 @@ header .borquezmusicsmall{
     transition: 0.5s;
     opacity: 95%;
   }
+}
+.container .d-flex:first-child{
+  align-items: flex-start;
 }
 .modal{
   color: #020202;
