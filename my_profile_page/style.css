@@ -1,0 +1,30 @@
+body {
+  background-image: url("bg.jpg");
+  background-color: #cccccc;
+  background-blend-mode: overlay;
+}
+#links {
+  background-color: #add2ff;
+}
+a {
+  color: black;
+}
+#header {
+  background-color: #10314e;
+}
+#content {
+  background-color: #87beff;
+}
+#profile {
+  border-radius: 10%;
+}
+#header {
+  color: aliceblue;
+  background-color: #10314e;
+  border-radius: 5%;
+}
+@media only screen and (max-width: 720px) {
+  h3 {
+    font-size: large;
+  }
+}
